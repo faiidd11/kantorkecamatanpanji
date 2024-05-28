@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Website Resmi Kecamatan Panji</title>
+	<link rel="stylesheet" href="swiper-bundle.min.css"> <!--swiper css-->
+	<link rel="icon" href="favicon.png"/> <!--  ini buat icon-->
+	<link rel="stylesheet" href="style.css"> <!--  ini penghubung css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--  ini penghubung jquery -->
+</head>
+<span class="icons"><img src="gambar/phone-call.svg" alt=""><strong>081322123423</strong></span> <!--  ini buat telepon-->
+<body>
+	<div>
+		<nav class="menu">
+			<div class="logo">
+				<img src="gambar/logo.jpeg" alt=""> <!--  ini buat logo panji-->
+			</div>
+			<ul  class="menuatas"> <!--  ini buat navbar menu dan sub menu-->
+				<li><a href="#">Home</a></li>
+				<li class="dropdown1">Profil
+					<div class="dropdown1-konten">
+						<a href="#">Sejarah</a>
+						<a href="#">VISI DAN MISI KECAMATAN PANJI</a>
+						<a href="#">Struktur Organisasi</a>
+						<a href="#">DESA DAN KELURAHAN KECAMATAN PANJI</a>
+						<a href="#">Tugas dan Fungsi Kecamatan Panji Kabupaten Situbondo</a>
+					</div>
+				</li>
+				<li class="dropdown2">Potensi Kecamatan
+					<div class="dropdown2-konten">
+						<a href="#">Bidang Pariwisata</a>
+					</div>
+				</li>
+				<li class="dropdown3">Pelayanan Publik
+					<div class="dropdown3-konten">
+						<a href="#">INFOGRAFIS PATEN</a>
+					</div>
+				</li>
+				<li class="dropdown4">Media
+				<div class="dropdown4-konten">
+					<a href="#">Berita</a>
+					<a href="#">Informasi</a>
+					<a href="#">Galeri</a>
+				</div>
+				</li>
+				<li><a href="#">Download</a></li>
+			</ul>
+		</nav>
+		<div class="container"> <!--  ini buat gambar gerak-->
+			<div class="content-slide">
+				<div class="imgslide fade">
+					<div class="numberslide">Kantor Kecamatan Panji</div>
+					<img src="gambar/kantor.jpg" alt="">
+				</div>
+				<div class="imgslide fade">
+					<div class="numberslide">Kantor Kecamatan Panji</div>
+					<img src="gambar/2.jpg" alt="">
+				</div>
+				<div class="imgslide fade">
+					<div class="numberslide">Keluarga Besar Kecamatan Panji</div>
+					<img src="gambar/3.jpeg" alt="">
+				</div>
+				<div class="imgslide fade">
+					<div class="numberslide">Kantor Kecamatan Panji</div>
+					<img src="gambar/lokasi.jpeg" alt="">
+				</div>
+				<div class="imgslide fade">
+					<div class="numberslide">Acara Ancak Agung (Peringatan Maulid Nabi Muhammad SAW)</div>
+					<img src="gambar/ancak.png" alt="">
+				</div>
+				<a class="prev" onClick="nextslide(-1)">&#10094;</a>
+				<a class="next" onClick="nextslide(1)">&#10095;</a>
+			</div>
+		</div>
+		<script>
+			var slideIndex = 1; 
+				showslide(slideIndex);
+				function nextslide(n){
+					showslide(slideIndex += n);
+				}
+			function showslide(n){
+				var i;
+				var slides = document.getElementsByClassName("imgslide fade")
+	
+				if(n>slides.length) {
+					slideIndex = 1
+				}
+				if(n<1) {
+					slideIndex = slides.length;
+				}
+				for(i = 0; i <slides.length; i++){
+					slides[i].style.display = "none";
+				}
+				slides[slideIndex -1 ].style.display = "block";
+			}
+		 </script>
+					<div class="fotocamat">
+						<img src="gambar/camat.png" alt=""align="left"/> <!--  ini buat foto camat-->
+					</div>
+					<div class="tulisancamat">
+						<h4 class="teks1">SELAMAT DATANG DI WEBSITE RESMI KECAMATAN PANJI</h4>
+						<div class="teks2"><strong>Sambutan Camat</strong></div>
+						<div class="teks3">SELAMAT DATANG DI WEBSITE RESMI KECAMATAN PANJI</div>
+						<div class="teks4">.ANDI JAKA SETYAWAN</div>
+						<p class="teks5">NIP. .....</p>
+					</div>
+					<div class="jadwalkegiatan"> <!-- ini tabel kegiatan -->
+						<div class="judul"><strong>Jadwal Kegiatan</strong></div>
+						<div>
+							<img src="https://panji.situbondokab.go.id/assets/images/index5/colored_border.svg" alt="">
+							<table class="tabel1" height="250px" width="100%" border="1" bordercolor="white">
+								<thead>
+									<tr height="60px" bgcolor = "red">
+										<th style="color: #FFF;">#</th>
+										<th style="color: #FFF;">Judul Kegiatan</th>
+										<th style="color: #FFF;" width="14%">Tanggal Kegiatan</th>
+										<th style="color: #FFF;" width="12%">Jam Kegiatan</th>
+										<th style="color: #FFF;" width="13%">Tempat</th>
+									</tr>
+								</thead>
+								<tbody>
+																									<tr>
+										<td style="color: #FFF;">1</td>
+										<td style="color: #FFF;">Kegiatan Rehabilitas Sosial Penyandang Masalah Kesejahteraan Sosial (PMKS) Lainnya Bukan Korban HIV/AIDS dan Napza di luar Panti Sosial Dalam Rangka Pembinaan Karang Taruna Desa/Kelurahan Kabupaten Situbondo TA 2023</td>
+										<td style="color: #FFF;">05 Oktober 2023</td>
+										<td style="color: #FFF;">8:00 WIB</td>
+										<td style="color: #FFF;">Kecamatan Panji</td>
+									</tr>
+																	<tr>
+										<td style="color: #FFF;">2</td>
+										<td style="color: #FFF;">Pembinaan PBB desa Klampokan Kecamatan Panji</td>
+										<td style="color: #FFF;">05 Oktober 2023</td>
+										<td style="color: #FFF;">11:00 WIB</td>
+										<td style="color: #FFFF;">Desa Klampokan</td>
+									</tr>
+																</tbody>
+							</table>
+						</div>
+										
+					</div>
+					<div class="beritaterbaru"> <!--  ini buat Berita Terbaru-->
+						<strong>Berita Terbaru</strong>
+						<div></div><img src="https://panji.situbondokab.go.id/assets/images/index5/colored_border.svg" alt="">
+					</div>
+					<div class="containerberita"> <!--  ini buat berita 1-->
+						<div class="containerberita2">
+							<div class="gambar">
+								<img src="gambar/bg5.jpg" alt="" height="260px" width="370px" />
+								<div class="blogtext">
+									<div class="isiblog">
+											<span>17 Juli 2020</span>
+											<span>.admin</span>
+											<a href="https://panji.situbondokab.go.id/berita/sosialisasi-persiapan-pilkada-2020">
+												<h4 class="judulberita">Sosialisasi Persiapan Pilkada 2020</h4>
+											</a>
+											<p>Persiapan Pilkada Tahun 2020 Kabupaten Situbondo;&nbsp;Persiapan Pilkada Tahun 2020 Kabupaten Situbondo;&nbsp;Persiapan Pilkada Tahun 2020 Kabupaten Situbondo;&nbsp;Persiapan Pilkada Tahun 2020 Kabupaten Situbondo;&nbsp;Persiapan Pilkada Tahun 202...</p>
+											<a class="selengkapnya" href="https://panji.situbondokab.go.id/berita/sosialisasi-persiapan-pilkada-2020">Selengkapnya</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="containerberita2"> <!--  ini buat icon berita 2-->
+							<div class="gambar">
+								<img src="gambar/bg6.jpg" alt="" height="260px" width="370px" />
+								<div class="blogtext">
+									<div class="isiblog">
+											<span> 01 Juni 2017</span>
+											<span>.samsul</span>
+											<a href="https://panji.situbondokab.go.id/berita/ayo-makan-ikan-untuk-generasi-sehat-dan-cerdas">
+												<h4 class="judulberita">Ayo Makan Ikan untuk Generasi Sehat dan Cerdas</h4>
+											</a>
+											<p class="p1">Sabtu petang (13/5) Menkes Nila F. Moeloek membuka Festival Kuliner Nusantara Tahun 2017 di Museum Fatahillah, Jakarta. Hadir pada kesempatan tersebut Menkominfo Rudiantara, Kepala Kantor Staf Presiden (KSP) Teten Masd...</p>
+											<a class="selengkapnya" href="https://panji.situbondokab.go.id/berita/ayo-makan-ikan-untuk-generasi-sehat-dan-cerdas">Selengkapnya</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="containerinformasi swiper"> <!-- ini buat informasi terbaru -->
+						<div class="informasiterbaru2"><strong>Informasi Terbaru</strong>
+							<div>
+								<img src="https://panji.situbondokab.go.id/assets/images/index5/colored_border.svg" alt="">
+							</div>
+						</div>
+						<div class="bebas"><div class="containergaleri swiper-wrapper"> <!--  ini buat info 1-->
+							<div class="containerinformasi2 swiper-slide">
+								<img src="gambar/info3.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<span>
+										<img src="/gambar/calender.png" alt="">
+										<span>17 Agustus 2017</span>
+									</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 3</strong></div>
+										<div class="isi">samsul</div>
+									</div>
+								</div>
+							</div>
+							<div class="containerinformasi2 swiper-slide"> <!--  ini buat info 2  -->
+								<img src="gambar/info1.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<span>
+										<img src="gambar/calender.png" alt="">
+										<span>30 Juni 2020</span>
+									</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 1</strong></div>
+										<div class="isi">admin</div>
+									</div>
+								</div>
+							</div>
+							<div class="containerinformasi2 swiper-slide"><!--  ini buat info 3  -->
+								<img src="gambar/info2.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<span>
+										<img src="gambar/calender.png" alt="">
+										<span>18 Agustus 2017</span>
+									</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 2</strong></div>
+										<div class="isi">samsul</div>
+									</div>
+								</div>
+							</div>
+							<div class="containerinformasi2 swiper-slide"> <!--  ini buat info 4  -->
+								<img src="gambar/info3.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<img src="gambar/calender.png" alt="">
+									<span>17 Agustus 2017</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 3</strong></div>
+										<div class="isi">samsul</div>
+									</div>
+								</div>
+							</div>
+							<div class="containerinformasi2 swiper-slide">
+								<img src="gambar/info3.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<span>
+										<img src="/gambar/calender.png" alt="">
+										<span>17 Agustus 2017</span>
+									</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 3</strong></div>
+										<div class="isi">samsul</div>
+									</div>
+								</div>
+							</div>
+							<div class="containerinformasi2 swiper-slide"> <!--  ini buat info 2  -->
+								<img src="gambar/info1.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<span>
+										<img src="gambar/calender.png" alt="">
+										<span>30 Juni 2020</span>
+									</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 1</strong></div>
+										<div class="isi">admin</div>
+									</div>
+								</div>
+							</div>
+							<div class="containerinformasi2 swiper-slide"><!--  ini buat info 3  -->
+								<img src="gambar/info2.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<span>
+										<img src="gambar/calender.png" alt="">
+										<span>18 Agustus 2017</span>
+									</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 2</strong></div>
+										<div class="isi">samsul</div>
+									</div>
+								</div>
+							</div>
+							<div class="containerinformasi2 swiper-slide"> <!--  ini buat info 4  -->
+								<img src="gambar/info3.jpg" alt="" width="282px" height="295px">
+								<div class="tanggal">
+									<img src="gambar/calender.png" alt="">
+									<span>17 Agustus 2017</span>
+								</div>
+								<div class="informasitext">
+									<div class="isiinformasi">
+										<div class="info"><strong>Info 3</strong></div>
+										<div class="isi">samsul</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+    					<div class="swiper-button-prev"></div>
+    					<div class="swiper-scrollbar"></div>
+    					<div class="swiper-pagination"></div>
+					</div></div>
+						
+			<div class="beritaterbaru"><strong>Galeri</strong><!--  ini buat galeri  -->
+				<div></div><img src="https://panji.situbondokab.go.id/assets/images/index5/colored_border.svg" alt="">
+			</div>
+			<div class="containergaleri">
+				<div class="containergaleri2"> <!--  ini buat kegiatan 3  -->
+					<img src="gambar/ancak.png" alt="" width="270px" height="205px">
+					<div class="galeritext">
+						<div class="isigaleri">
+							<div>Judul Kegiatan 3</div>
+						</div>
+					</div>
+				</div>
+				<div class="containergaleri2"> <!--  ini buat kegiatan 2  -->
+					<img src="https://panji.situbondokab.go.id/gambar/2/BANONGAN.jpg" alt="" width="270px" height="205px">
+					<div class="galeritext">
+						<div class="isigaleri">
+							<div>Judul Kegiatan 2</div>
+						</div>
+					</div>
+				</div>
+				<div class="containergaleri2"> <!--  ini buat kegiatan 1  -->
+					<img src="gambar/ancak.png" alt="" width="270px" height="205px">
+					<div class="galeritext">
+						<div class="isigaleri">
+							<div>Nama Kegiatan 1</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="containerkosong"></div>
+			<div class="containerpesan">
+				<div class="containerpesan1">
+					<i class="fa-solid fa-location-dot"></i>
+					<span>Jl. Semeru 01 Kode Pos 68352 Kecamatan Panji Kabupaten Situbondo - Jawa Timur</span>
+				</div>
+				<div class="containerpesan2">
+					<i class="fa-solid fa-envelope"></i>
+					<span>kecamatanpanji01@gmail.com</span>
+				</div>
+				<div class="containerpesan3">
+					<i class="fa-solid fa-phone-volume"></i>
+					<span>081322123423</span>
+				</div>
+			</div>
+			<div class="containerpeta">
+				<div class="containerpeta1">
+					<div>
+						<img src="gambar/logo.jpeg" alt="">
+					</div>
+				</div>
+				<div class="containerpeta2">
+					<div class="petalokasiatas">Peta Lokasi</div>
+					<div>
+						<img src="https://panji.situbondokab.go.id/assets/images/index5/white_half_border.svg" alt="">
+						<div class="petalokasibawah">
+							https://goo.gl/maps/JDw7UYJKtZdEVXpJ9
+						</div>
+					</div>
+				</div>
+				<div class="containerpeta3">
+					<div class="followatas">
+						Follow Us
+					</div>
+					<div class="followtengah">
+						<img src="https://panji.situbondokab.go.id/assets/images/index5/white_half_border.svg" alt="">
+					</div>
+					<div class="followbawah">
+						<ul>
+							<span>></span>
+							<a href="https://panji.situbondokab.go.id/"><span></span><i class="fa-brands fa-twitter"></i> twitter</a>
+						</ul>
+						<ul>
+							<span>></span>
+							<a href="https://www.facebook.com/kecamatan.panji.73"><i class="fa-brands fa-facebook"></i> facebook</a>
+						</ul>
+						<ul>
+							<span>></span>
+							<a href="https://www.instagram.com/kecamatan_panji"><i class="fa-brands fa-instagram"></i> instagram</a>
+						</ul>
+						<ul>
+							<span>></span>
+							<a href="https://panji.situbondokab.go.id/"><i class="fa-brands fa-youtube"></i> youtube</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="containerfooter">
+				<div class="footeratas">Pemerintah Kabupaten Situbondo © 2020 |</div>
+				<div class="footertengah">Dinas Komunikasi, Informatika, dan Persandian</div>
+				<div class="footerbawah">.</div>
+			</div>
+			<script>
+				$(document).ready(function (){
+					$(".dropdown1").mouseenter(function(){
+						$(".dropdown1-konten").show();
+					})
+					$(".dropdown1").mouseleave(function(){
+						$(".dropdown1-konten").hide();
+					})
+					$(document).ready(function (){
+					$(".dropdown2").mouseenter(function(){
+						$(".dropdown2-konten").show();
+					})
+					$(".dropdown2").mouseleave(function(){
+						$(".dropdown2-konten").hide();
+					})
+					})
+					$(document).ready(function (){
+					$(".dropdown3").mouseenter(function(){
+						$(".dropdown3-konten").show();
+					})
+					$(".dropdown3").mouseleave(function(){
+						$(".dropdown3-konten").hide();
+					})
+					})
+					$(document).ready(function (){
+					$(".dropdown4").mouseenter(function(){
+						$(".dropdown4-konten").show();
+					})
+					$(".dropdown4").mouseleave(function(){
+						$(".dropdown4-konten").hide();
+					})
+					})
+				})
+			</script>
+			<div id="tombol" class="tombol"><i class="fa-solid fa-angles-up"></i></div>
+			<script>
+				let getTombol = document.getElementById("tombol");
+				window.addEventListener("scroll",function(){
+					if(
+						document.documentElement.scrollTop > 700)
+						{getTombol.style.display = "block";}
+				 else {
+					getTombol.style.display = "none";}
+				});
+				getTombol.addEventListener("click", function() {
+					document.documentElement.scrollTop = 0;
+				});
+			</script>
+		</div>
+</body>
+<!--swiper js-->
+<script src="swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</html>

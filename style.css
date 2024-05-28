@@ -1,0 +1,413 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+.icons {
+    display: flex;
+    padding-left: 20px;
+    color: gray;
+}
+nav .logo img{
+    width: 250px;
+}
+nav {
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: blue;
+}
+.menuatas .dropdown1-konten, .menuatas .dropdown2-konten, .menuatas .dropdown3-konten, .menuatas .dropdown4-konten{
+    position: absolute;
+    display: none;
+}
+
+.dropdown1-konten, .dropdown2-konten, .dropdown3-konten, .dropdown4-konten{
+    padding-top: 5px;
+    height: 130px;
+    width: 1000x;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.dropdown1-konten {
+    animation-name: example;
+    animation-duration: 0.3s;
+}
+@keyframes example {
+    0%   {left: 637px; top: 175px;}
+    100%  { top: 175px;}
+}
+.dropdown2-konten{
+    animation-name: example2;
+    animation-duration: 0.3s;
+}
+@keyframes example2 {
+    0%   {left: 720px; top: 175px;}
+    100%  { top: 175px;}
+}
+.dropdown3-konten{
+    animation-name: example3;
+    animation-duration: 0.3s;
+}
+@keyframes example3 {
+    0%   {left: 890px; top: 175px;}
+    100%  { top: 175px;}
+}
+.dropdown4-konten{
+    animation-name: example4;
+    animation-duration: 0.3s;
+}
+@keyframes example4 {
+    0%   {left: 1050px; top: 175px;}
+    100%  { top: 175px;}
+}
+
+.dropdown1-konten a {
+    margin-top: 5px;
+}
+.dropdown1:hover,.dropdown2:hover, .dropdown3:hover, .dropdown4:hover{
+    color: blue;
+}
+.dropdown1:hover .dropdown1-konten a, .dropdown2:hover .dropdown2-konten a, .dropdown3:hover .dropdown3-konten a, .dropdown4:hover .dropdown4-konten a{
+    display: block;
+}
+.content-slide {
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+.container img {
+    vertical-align: middle;
+    width: 100%;
+    height: 1000px;
+}
+.prev, .next {
+    margin-left: 70px;
+    margin-right: 70px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 80%;
+    user-select: none;
+    background-color: gray;
+}
+    
+.next {
+    right: 0;
+    border-radius: 80%;
+}
+.prev:hover, .next:hover {
+    background-color: red;
+    color: white;
+}
+.content-slide .numberslide {
+    margin-top: 300px;
+    margin-left: 100px;
+    width: 550px;
+    height: 300px;
+    color: red;
+    font-size: 80px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.fotocamat img {
+    width: 555px;
+    padding-top: 25px;
+    margin-left: 25px;
+}
+.tulisancamat {
+    margin-top: 350px;
+    padding-left: 615px;
+}
+.tulisancamat .teks1 {
+    color: tomato;
+}
+.tulisancamat .teks2 {
+    margin-top: 10px;
+    font-size: 37px;
+    margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tulisancamat .teks3 {
+    color: rgb(105, 105, 105);
+}
+.tulisancamat .teks4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+.tulisancamat .teks5 {
+    color: rgb(105, 105, 105);
+}
+.jadwalkegiatan {
+    width: 100%;
+    height: 500px;
+    margin-top: 59px;
+    background-color: rgb(79, 79, 255);
+}
+.jadwalkegiatan .judul {
+    color: white;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-left: 500px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.jadwalkegiatan img {
+    padding-top: 5px;
+    padding-left: 580px;
+}
+.tabel, th, td {
+    padding: 8px 20px;
+    text-align: center;
+}
+.beritaterbaru {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.containerberita{
+    width: 100%;
+    display: flex;
+}
+.containerberita2 {
+    margin: 20px
+}
+.blogtext .isiblog {
+    margin-top: 20px;
+    color: gray;
+}
+.isiblog p {
+    width: 360px;
+}
+.isiblog .p1 {
+    text-align: justify;
+}
+.isiblog h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: black;
+    width: 360px
+}
+.isiblog h4:hover {
+    color: blue;
+}
+.isiblog a {
+    text-decoration: none;
+}
+.selengkapnya {
+    color: blue;
+}
+.selengkapnya:hover {
+    font-size: 20px;
+    transition: 0.3s;
+}
+.containerinformasi {
+    color: white;
+    height: 700px;
+    width: 100%;
+    background-color: blue;
+}
+.containerinformasi .informasiterbaru2{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 80px;
+    padding-left: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.bebas {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.containerinformasi2 {
+    width: 100px;
+    height: 430px;
+    background-color: white
+}
+.informasitext .info {
+    color:black;
+    text-align: center;
+}
+.informasitext .isi {
+    color: gray;
+    text-align: center;
+}
+.tanggal {
+    width: 150px;
+    background-color: tomato;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+.tanggal span {
+    color: white;
+}
+.isiinformasi .info{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containergaleri{
+    height: 300px;
+    width: 100%;
+    display: flex;
+}
+.containergaleri:hover {
+    cursor:all-scroll;
+}
+.containergaleri2 {
+    margin: 20px
+}
+.galeritext .isigaleri {
+    text-align: center;
+    font: bold;
+}
+.containerkosong{
+    height: 110px;
+    width: 100%;
+    background-color: blue;
+}
+.containerpesan{
+    display: flex;
+    height: 260px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 1px solid gray;
+}
+.containerpesan  div {
+    flex:1;
+}
+.containerpesan1, .containerpesan2, .containerpesan3 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    color:white;
+    height: 170px;
+    background-color: rgb(32, 32, 32);
+}
+.containerpesan1 i, .containerpesan2 i, .containerpesan3 i {
+    font-size: 35px;
+}
+.containerpesan1 span, .containerpesan2 span, .containerpesan3 span {
+    padding-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+.containerpesan1:hover i, .containerpesan2:hover i, .containerpesan3:hover i{
+color: red;
+}
+.containerpeta{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.containerpeta  div {
+    flex:1;
+}
+.containerpeta1, .containerpeta2, .containerpeta3 {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 30px;
+    color:white;
+    height: 260px;
+    background-color: rgb(32, 32, 32);
+}
+.petalokasiatas{
+    font-size: 21px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.petalokasibawah {
+    margin-top: 20px;
+}
+.containerpeta1 img {
+    width: 260px;
+    align-items: left;
+}
+.followatas {
+   font-size: 21px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-left: 200px;
+}
+.followtengah {
+    margin-left: 200px;
+}
+.followbawah {
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.followbawah a{
+    color: white;
+    text-decoration: none;
+}
+.followbawah i{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.followbawah a:hover {
+    color: red;
+}
+.containerfooter{
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border: 5px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+}
+.footeratas {
+    color: white
+}
+.footertengah {
+    margin-left: 5px;
+    color:red;
+}
+.footerbawah{
+    color: white;
+}
+.tombol {
+position: fixed;
+bottom: 30px;
+right: 30px;
+padding: 10px 15px;
+background-color: blue;
+color: white;
+border-radius: 50px;
+cursor: pointer;
+align-items: center;
+z-index: 50;
+}
